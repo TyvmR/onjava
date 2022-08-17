@@ -1,4 +1,4 @@
-package org.example.chapter14;
+package org.example.chapter14.test.java.org.example;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -12,7 +12,7 @@ public class NioFile {
 
     static void visitDir(String dir) throws IOException {
 //        Path path = Paths.get("C:\\Users\\Administrator\\IdeaProjects\\onjava\\basic\\src\\main\\resources\\dd.text");
-        Path path = Paths.get("C:\\Users\\Administrator\\IdeaProjects\\onjava");
+        Path path = Paths.get(dir);
 //        Stream<String> lines = Files.lines(path);
 //        String collect = lines.collect(Collectors.joining("-"));
 //        System.out.println(collect);
@@ -53,7 +53,7 @@ public class NioFile {
 
     public static void main(String[] args) {
         try {
-            visitDir("dd.text");
+            visitDir("C:\\Users\\Administrator\\IdeaProjects\\aops_aopc_datalake_stream\\");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
