@@ -25,7 +25,6 @@ public class DeleEclipseConfigFiles {
 //        perms.add(PosixFilePermission.OTHERS_READ);
 
 //        Path path = Paths.get("C:\\Users\\Administrator\\IdeaProjects\\onjava");
-        Path path = Paths.get("C:\\Users\\Administrator\\IdeaProjects\\aops_aopc_datalake_stream");
 //        Files.setPosixFilePermissions(path,perms);
 //        Path path = Paths.get("C:", "Users", "Administrator", "IdeaProjects", "aops_aopc_datalake_stream");
 //        AclFileAttributeView aclView = Files.getFileAttributeView(path,
@@ -48,6 +47,8 @@ public class DeleEclipseConfigFiles {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
+        Path path = Paths.get("C:\\Users\\Administrator\\IdeaProjects\\aops_aopc_datalake_stream");
+
         Files.walkFileTree(path, new SimpleFileVisitor<Path>() {
 
             @Override
